@@ -11,7 +11,7 @@ spec:
   chartGitPath: podinfo
   releaseName: podinfo-dev
   values:
-    image: haigiang0591/podinfo:dev-b
+    image: haigiang0591/podinfo:dev-j0u7m
     replicaCount: 1
     hpa:
       enabled: false
