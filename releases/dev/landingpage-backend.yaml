@@ -1,17 +1,16 @@
----
 apiVersion: helm.integrations.flux.weave.works/v1alpha2
 kind: FluxHelmRelease
 metadata:
-  name: podinfo-dev
+  name: landingpage-backend-dev
   namespace: dev
   annotations:
     flux.weave.works/automated: 'true'
     flux.weave.works/tag.chart-image: glob:dev-*
 spec:
-  chartGitPath: podinfo
-  releaseName: podinfo-dev
+  chartGitPath: landingpage-backend
+  releaseName: landingpage-backend-dev
   values:
-    image: haigiang0591/podinfo:dev-j0u7m
+    image: registry.novaonx.com/novaonx/landingpage-backend:latest
     replicaCount: 1
     hpa:
       enabled: false
