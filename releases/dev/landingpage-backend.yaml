@@ -10,7 +10,7 @@ spec:
   chartGitPath: landingpage-backend
   releaseName: landingpage-backend-dev
   values:
-    image: registry.novaonx.com/novaonx/landingpage-backend:latest
+    image: registry.novaonx.com/novaonx/landingpage-backend:dev-e0262ac6316edb141a08dcab54492c0150edaa49
     replicaCount: 1
     hpa:
       enabled: false
